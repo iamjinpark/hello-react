@@ -2,22 +2,24 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // const name = undefined;
+  const name = '지인';
+  const style = {
+    backgroundColor: 'black',
+    color: 'aqua',
+    fontSize: '48px',
+    fontWeight: 'bold',
+    padding: '16px',
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="react">
+        {/* {name === "지인" ? <h1>지인아 안녕!</h1> : null} */}
+        {/* {name === "지인" && <h1>지인아 안녕!</h1>} */}
+        {name || '지인'}
+      </div>
+      <input />
     </div>
   );
 }
